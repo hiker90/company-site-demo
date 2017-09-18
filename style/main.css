@@ -187,6 +187,7 @@ header .brand:hover {
   text-align: center;
   width: 100%;
   color: #ccc;
+  word-wrap: break-word;
 }
 #main .banner .info {
   position: absolute;
