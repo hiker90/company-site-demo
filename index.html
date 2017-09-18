@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>云上科技</title>
+  <link rel="stylesheet" href="style/main.css">
+  <script src="http://www.jq22.com/jquery/jquery-2.1.1.js"></script>
+  <script>
+  $(function(){
+    $('[data-fold]').on('click', function(event) {
+      event.preventDefault();
+      var foldTar = $(this).attr('data-fold');
+      $('#'+foldTar).toggle();
+    });
+  })
+  </script>
+</head>
+<body>
+  <header id="head">
+    <a class="brand" href="index.html">云上科技</a>
+    <p id="hum-ico" data-fold="main-nav"><span></span><span></span><span></span></p>
+    <nav id="main-nav">
+      <a href="#main-sec1">产品与解决方案</a>
+      <a href="page/news.html">新闻中心</a>
+      <a href="page/work.html">人才招聘</a>
+      <a href="page/relation.html">合作伙伴</a>
+    </nav>
+  </header>
+  <div id="main">
+    <div class="banner">
+      <h1>云上科技</h1>
+      <p>提供优质云端计算服务</p>
+      <div class="info">
+        <div class="info-panel" id="info-panel1">
+          <div class="info-img">添加图片</div>
+          <div class="info-t" id="info-t1">A <p>请添加描述</p></div>
+        </div>
+        <div class="info-panel">
+          <div class="info-img">添加图片</div>
+          <div class="info-t" id="info-t2">B <p>请添加描述</p></div>
+        </div>
+        <div class="info-panel">
+          <div class="info-img">添加图片</div>
+          <div class="info-t" id="info-t3">C <p>请添加描述</p></div>
+        </div>
+      </div>
+    </div>
+    <section id="main-sec1">
+      <h2>云上的日子</h2>
+      <article>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, quisquam similique suscipit! Inventore quis eum rerum architecto, rem quod error libero atque, minima nihil numquam ut pariatur, sit adipisci commodi!<br/></p><br/>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque ea architecto culpa praesentium a. Dicta nisi neque, debitis aperiam accusamus ex voluptatem minima deleniti adipisci excepturi! Quae, pariatur placeat nihil!</p>
+      </article>
+    </section>
+    <section id="main-sec2">
+      <h2>云上的日子</h2>
+      <div class="content">
+        <img src="img/pic01.jpg" alt="">
+        <article>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus aliquid, itaque enim ullam tenetur, dolorum doloremque dolore quibusdam, harum labore laboriosam perspiciatis iusto, maxime autem inventore vel. Similique, perferendis, possimus.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quidem delectus asperiores dolorum voluptas repudiandae aliquid, velit deleniti ea praesentium, suscipit! Eaque repudiandae accusamus ipsa quas voluptatum deleniti possimus nesciunt!</p>
+        </article>
+      </div>
+    </section>
+    <section id="main-sec3">
+      <h2>云上的日子</h2>
+      <div class="content">
+        <article>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium dicta quaerat cum esse repellat, id quas possimus vel amet totam, rerum reprehenderit accusamus alias, quisquam molestias! Facilis tenetur nihil similique.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero ab dolorem inventore nam a numquam incidunt amet quis! Harum doloribus cupiditate quia non nobis, corrupti. Illum aspernatur consectetur tempore similique.</p>
+        </article>
+        <img src="img/pic02.jpg" alt="">
+      </div>
+    </section>
+    <section id="main-sec4">
+      <h2>云上的日子</h2>
+      <div class="content">
+        <img src="img/pic03.jpg" alt="">
+        <article>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis nam, a voluptas porro quibusdam, molestias consequuntur vitae nemo. Deserunt odio veritatis possimus, libero pariatur nulla porro exercitationem perspiciatis dolores quam!</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel assumenda voluptate, sint ipsa explicabo cum dignissimos, voluptates ipsum, dolore dolorum fugiat quis nulla adipisci aspernatur nesciunt, porro sit corporis omnis.</p>
+        </article>
+      </div>
+    </section>
+  </div>
+  <footer>
+    <div class="sec" id="sec1">
+      <h3>版权所有</h3>
+      <nav><a href="">关于云上</a></nav>
+      <p>Copyright &copy; 云上科技版权所有</p>
+      <p>京ICP备*****号 京公网安备*****</p>
+    </div>
+    <div class="sec" id="sec2">
+      <h3>友情链接</h3>
+      <nav>
+        <a href="">云上科技合作1</a> |
+        <a href="">云上科技合作2</a> |
+        <a href="">云上科技合作3</a> |
+        <a href="">云上科技合作4</a>
+      </nav>
+    </div>
+  </footer>
+  <a id="to-top" href="#head">Top</a>
+</body>
+</html>
