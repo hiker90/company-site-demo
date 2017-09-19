@@ -279,11 +279,12 @@ header .brand:hover {
   -ms-flex-wrap: wrap;
   -o-flex-wrap: wrap;
   flex-wrap: wrap;
+  overflow: hidden;
 }
 #main article, #main section img {
   flex-grow: 1;
   flex-shrink: 1;
-  flex-basis: 200px;
+  flex-basis: 300px;
 }
 #main section img {
   max-width: 500px;
@@ -296,6 +297,7 @@ header .brand:hover {
   font-size: 1.1rem;
   line-height: 2rem;
   text-indent: 2em;
+  text-overflow: ellipsis;
 }
 /*底部*/
 footer {
