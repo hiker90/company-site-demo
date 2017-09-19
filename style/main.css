@@ -73,7 +73,7 @@ header {
 }
 header .brand, header nav>a {
   display: inline-block;
-  font-size: 1.1rem;
+  font-size: 18px;
   line-height: 2rem;
 }
 header .brand {
@@ -140,8 +140,9 @@ header .brand:hover {
 }
 /*内容*/
 #main {
-  flex: auto;
-  -ms-flex: auto;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
   width: 100%;
   background: url(../img/wrap.png);
 }
@@ -179,23 +180,22 @@ header .brand:hover {
   to {color: #FF0000;}
 }
 #main .banner p {
-  flex: 0;
-  -ms-flex: 0;
+  flex-grow: 0;
   display: inline-block;
   font-size: 1rem;
   line-height: 1.6rem;
   text-align: center;
   width: 100%;
   color: #ccc;
-  word-wrap: break-word;
 }
 #main .banner .info {
   position: absolute;
   top: 100%;
   margin-top: -12.5rem;
   display: flex;
-  flex: none;
-  -ms-flex: none;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
   width: 100%;
   justify-content: space-around;
   -ms-justify-content: space-around;
@@ -244,8 +244,9 @@ header .brand:hover {
 }
 #main section h2 {
   display: block;
-  flex: 0 1;
-  -ms-flex: 0 1;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
   font-size: 2rem;
   line-height: 3rem;
   text-align: center;
@@ -254,8 +255,9 @@ header .brand:hover {
 }
 #main section .content {
   display: flex;
-  flex: auto;
-  -ms-flex: auto;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
   -ms-align-items: flex-start;
   align-items: flex-start;
   justify-content: space-around;
@@ -267,8 +269,9 @@ header .brand:hover {
   flex-wrap: wrap;
 }
 #main article, #main section img {
-  flex: 1;
-  -ms-flex: 1;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 200px;
 }
 #main section img {
   max-width: 500px;
@@ -330,7 +333,7 @@ footer .sec> p {
   -ms-justify-content: flex-start;
 }
 #news aside {
-  flex: 1;
+  flex-grow: 1;
   min-width: 8rem;
   border-right: .1rem solid #FF6C00;
   margin-right: 2rem;
@@ -345,8 +348,7 @@ footer .sec> p {
   border-left: .3rem solid #333;
 }
 #news .news-content {
-  flex: 5;
-  -ms-flex: 5;
+  flex-grow: 5;
 }
 #news .news-content>div.news-sec {
   display: flex;
@@ -364,13 +366,15 @@ footer .sec> p {
 #news .news-sec>img {
   display: inline-block;
   margin-left: 0;
-  flex: 2;
-  -ms-flex: 2 1 0px;
+  flex-grow: 2;
+  flex-shrink: 1;
+  flex-basis: 100px;
   max-width: 300px;
 }
 #news .news-sec>div {
-  flex: 3;
-  -ms-flex: 3 1 0px;
+  flex-grow: 3;
+  flex-shrink: 1;
+  flex-basis: 0px;
   margin-right: 2rem;
   min-width: 20rem;
   font-size: 1rem;
